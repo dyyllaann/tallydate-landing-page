@@ -1,25 +1,16 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "TALLYDATE",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
     {
-      "name": "Product",
-      "href": "product"
-    },
-    {
       "name": "Features",
       "href": "features"
     },
-
     {
-      "name": "Pricing",
-      "href": "pricing"
-    },
-    {
-      "name": "About",
-      "href": "about"
+      "name": "FAQ",
+      "href": "faq"
     }
   ],
   "callToAction": {
@@ -27,58 +18,88 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "img": "/assets/images/happyTeam.jpeg",
+    "title": "TallyDate",
+    "subtitle": "Date Calculator",
+    "description": "Our easy-to-use deadline calculator app helps you stay organized and on top of your deadlines, whether you're a student, a professional, or just someone who wants to stay on track. With our app, you can quickly calculate the number of days between any two dates or the number of days until your next deadline.",
+    "imgLightMode": "/assets/images/light-mode-date-screen.png",
+    "imgDarkMode": "/assets/images/light-mode-days.png",
+    "video": "/assets/gifs/tallydate.webm",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Get TallyDate",
+      "href": "https://chrome.google.com/webstore/detail/date-calculator/iblpkfneemfheailondhclobmhbfopgk"
     },
     "secondaryAction": {
       "text": "Email us",
       "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
     }
   },
-  "product": {
-    "title": "React landing page 2021",
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "It's as easy as 1, 2, 3",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
+        "title": "Enter a date",
+        "description": "Enter a date and choose your options. TallyDate will count the days according to your options.",
+        "img": "/assets/images/light-mode-date-screen.png"
       },
       {
-        "title": "Make it your own!",
+        "title": "Choose your options",
         "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
+        "img": "/assets/images/light-mode-date-selection.png"
+      },
+      {
+        "title": "Get your results",
+        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "img": "/assets/images/light-mode-days.png"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Features",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
+        "title": "Simple and easy to use",
+        "description": "Simply enter a date and choose your options. TallyDate will will do the rest.",
+        "img": "/assets/images/light-mode-date-screen.png"
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
-        "icon": "/assets/images/tailwindcss.svg"
+        "title": "Intuitive date selection ",
+        "description": "TallyDate Date Calculator features an intuitive mobile-like date selection for ease-of-use on all devices.",
+        "img": "/assets/images/light-mode-date-selection.png"
       },
       {
-        "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
-        "icon": "/assets/images/nextjs.svg"
+        "title": "Adaptive dark mode",
+        "description": "TallyDate Date Calculator automatically adjusts to your preferred browser settings for a comfortable viewing experience in low light.",
+        "img": "/assets/images/dark-mode-screen.png"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is it really free?",
+        "answer": "Yes! TallyDate Date Calculator is  part of a developing suite of transaction automation tools. If you enjoy using TallyDate, we think you’ll enjoy our other exciting new tools too."
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
+        "question": "Is my data secure?",
+        "answer": "TallyDate Date Calculator collects no data. All calculations are processed directly in your browser, keeping your deadline details safe and secure!"
+      },
+      {
+        "question": "How are holidays calculated?",
+        "answer": "TallyDate Date Calculator uses U.S. federal holidays in its calculations. TallyDate only counts observed holidays. For example, if a holiday lands on a Saturday, TallyDate will observe the preceding Friday. "
+      },
+      {
+        "question": "Is there a limit to the number of deadlines I can calculate with the app?",
+        "answer": "Not at all! TallyDate Date Calculator is FREE and without limitations."
+      },
+      {
+        "question": "How accurate is the app in calculating deadlines?",
+        "answer": "TallyDate Date Calculator has undergone dozens of test scenarios to ensure accuracy and has been used for countless transactions. If for any reason something doesn’t look right, please let us know! TallyDate strives to maintain 100% accuracy, 100% of the time."
+      },
+      {
+        "question": "How do I contact TallyDate?",
+        "answer": "You can contact us at support@tallydate.com"
       }
     ]
   },
@@ -123,21 +144,6 @@
   },
   "about": {
     "sections": [
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
       {
         "name": "Something",
         "href": "#",

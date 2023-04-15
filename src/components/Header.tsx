@@ -12,7 +12,7 @@ const Menu = () => {
 
   return (
     <>
-      <svg
+      {/* <svg
         className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
         fill="currentColor"
         viewBox="0 0 100 100"
@@ -20,19 +20,21 @@ const Menu = () => {
         aria-hidden="true"
       >
         <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
+      </svg> */}
 
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
-            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            id="header"
+            // className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            className="max-w-7xl mx-auto relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
-            <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0 px-8">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
+                  <img alt="logo" className="h-8 w-auto sm:h-8" src={logo} />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -53,16 +55,18 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
+                  className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
                   {item.name}
                 </Link>
               ))}
               <a
-                href="#"
+                href="https://chrome.google.com/webstore/detail/date-calculator/iblpkfneemfheailondhclobmhbfopgk"
                 className={`font-medium text-primary hover:text-secondary`}
+                target="_blank"
+                rel="noreferrer"
               >
-                Call to action
+                Get TallyDate
               </a>
             </div>
           </nav>

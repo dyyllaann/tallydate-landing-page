@@ -4,17 +4,17 @@ import config from '../config/index.json';
 import Divider from './Divider';
 import LazyShow from './LazyShow';
 
-const Features = () => {
-  const { features } = config;
-  const [firstItem, secondItem, thirdItem] = features.items;
+const HowItWorks = () => {
+  const { howItWorks } = config;
+  const [firstItem, secondItem, thirdItem] = howItWorks.items;
 
   return (
-    <section className={`bg-background pt-8`} id="product">
+    <section className={`bg-background py-8`} id="howItWorks">
       <div className={`container max-w-5xl mx-auto m-8`}>
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
-          {features.title}
+          {howItWorks.title}
         </h1>
         <Divider />
         <LazyShow>
@@ -83,4 +83,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default HowItWorks;
