@@ -6,7 +6,13 @@ const MainHeroImage = () => {
   const { mainHero } = config;
   return (
     <div className="xs: hidden sm:hidden lg:flex lg:w-1/2 flex">
-      <video loop muted width={300} className="m-auto drop-shadow-xl border-2">
+      <video
+        loop
+        autoPlay
+        muted
+        width={300}
+        className="m-auto drop-shadow-xl border-2"
+      >
         <source src={mainHero.video} type="video/webm" />
       </video>
       {/* <img
